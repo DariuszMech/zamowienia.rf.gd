@@ -1,0 +1,7 @@
+php_value display_errors Off
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Warsaw
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://zamowienia.rf.gd%{REQUEST_URI} [L,NE,R=301]

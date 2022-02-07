@@ -1,0 +1,1 @@
+and (zamowienia.status='skonczone' or zamowienia.status='reklamacja')
